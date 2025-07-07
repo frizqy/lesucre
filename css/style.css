@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --red-violet: #E55050;
+}
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #ddcccc;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #8B4513; /* Coklat tanah */
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.8em;
+    color: var(--red-violet);
+}
+
+p {
+    color: var(--red-violet);
+    font-size: 1.1em;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #360724; /* Coklat tua */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background-color: #360724; /* Coklat lebih gelap */
+}
+
+/* Header */
+.header {
+    width: 100%;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo {
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+.nav-links a, .header .logo{
+    color: var(--red-violet);
+}
+.nav-links a {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--red-violet);
+}
+
+/* Hero Section */
+.hero {
+    padding: 0px 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.hero-content {
+    border-radius: 10px;
+    margin: 20px;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-family: "Yesteryear", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--red-violet);
+    text-shadow: -4px 4px black;
+    font-size: 15em;
+}
+
+.hero p {
+    color: white;
+    font-size: 2em;
+    text-shadow: 5px 5px 5px rgba(0,0,0,1);
+}
+
+/* About Section */
+.about {
+    background-color: #FFFDE7; /* Krem lebih gelap */
+    color: #5C4033; /* Coklat teks */
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-nav{
+    gap: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.menu-nav a{
+    background-color: var(--red-violet);
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu-child-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    flex-wrap: wrap;
+}
+.menu-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+.contactus-content{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contactus-input-content{
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactus-image-content{
+    width: 50%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rating {
+    color: #FFD700; /* Warna bintang emas */
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.rating .fas, .rating .far { /* Ikon bintang */
+    margin: 0 2px;
+}
+
+
+/* Contact Section */
+.contact {
+    background-color: #FFFDE7;
+    color: #5C4033;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #A0522D;
+}
+
+/* Footer */
+.footer {
+    background-color: #5C4033; /* Coklat sangat gelap */
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 0.95em;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #E0B07F; /* Krem muda */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 3em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    h2 {
+        font-size: 2.2em;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr; /* Satu kolom di layar kecil */
+    }
+
+    .menu-item {
+        margin: 0 auto;
+        max-width: 400px; /* Batasi lebar item menu di mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        padding: 12px 25px;
+    }
+}
